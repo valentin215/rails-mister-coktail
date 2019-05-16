@@ -5,14 +5,14 @@
     <% @cocktails.each do |cocktail|  %>
 
       <div class="col">
-          <div class="card justify-content-center border-top-0 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card justify-content-center border-top-0 shadow p-70 mb-5 bg-white rounded" style="width: 18rem;">
+            <img class="card-img-top" src="https://i.pinimg.com/originals/af/d2/4c/afd24c5047e6aaa1cfbe4dd8e8d7468f.jpg" alt="Card image cap">
             <div class="card-body">
               <%= link_to cocktail_path(cocktail) do  %>
               <h5 class="card-title"><%= cocktail.name %></h5>
                <% end %>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <p class="card-text"><%= cocktail.name %></p>
+              <a href="#" class="btn btn-primary">Pick up!</a>
             </div>
              <br>
           </div>
