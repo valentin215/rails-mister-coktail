@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
+gem 'carrierwave', '~> 1.2'
+gem 'cloudinary', '~> 1.9.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -52,7 +54,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-gem 'carrierwave', '~> 1.2'
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -63,3 +65,5 @@ gem 'rails-controller-testing', group: [ :test ]
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
+
+gem 'dotenv-rails', groups: [:development, :test]

@@ -15,7 +15,7 @@
   <body>
       <nav class="navbar fixed-top navbar-light bg-white border-solid">
         <a class="navbar-brand" href="#">Wagon's Cocktails</a>
-        <%= link_to "Create a new Cocktail", new_cocktail_path(@cocktail), class: "btn btn-primary"  %>
+        <%= link_to "Create a new Cocktail", new_cocktail_path(@cocktail), class: "btn-cocktail"  %>
       </nav>
     <%= yield %>
     <%= javascript_include_tag "application" %>
