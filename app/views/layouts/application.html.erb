@@ -5,6 +5,10 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+    </style>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -13,9 +17,14 @@
   </head>
 
   <body>
-      <nav class="navbar fixed-top navbar-light bg-white border-solid">
-        <a class="navbar-brand" href="#">Wagon's Cocktails</a>
-        <%= link_to "Create a new Cocktail", new_cocktail_path(@cocktail), class: "btn-cocktail"  %>
+      <nav class="navbar fixed-top navbar-light bg-white border-solid" style="background-color: ">
+        <div style="font-size: 30px; height: 30px"></div>
+        <%= link_to cocktails_path do %>
+          <div class="navbar-brand mx-auto" style="font-size: 30px; color: #553D7C; font-family: 'Permanent Marker', cursive;">Wagon's Cocktails</div>
+        <% end %>
+        <%= link_to  new_cocktail_path(@cocktail) do %>
+        <i id="icon-cocktail" class="fas fa-cocktail mr-10" style="font-size: 30px; color: #553D7C"></i>
+        <% end %>
       </nav>
     <%= yield %>
     <%= javascript_include_tag "application" %>

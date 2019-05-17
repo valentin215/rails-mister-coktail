@@ -1,26 +1,22 @@
-<div class="container">
+<div class="container" style="margin-top: 30px">
 
   <div class="row d-flex justify-content-between">
 
     <% @cocktails.each do |cocktail|  %>
       <% if cocktail.photo.url %>
-      <div class="col">
-          <div class="card justify-content-center border-top-0 shadow p-70 mb-5 bg-white rounded" style="width: 18rem;">
-            <img class="card-img-top" src="<%= cl_image_path cocktail.photo, crop: :fill %>" alt="Card image cap">
-            <div class="card-body">
-              <%= link_to cocktail_path(cocktail) do  %>
-              <h5 class="card-title"><%= cocktail.name %></h5>
-               <% end %>
-              <p class="card-text"><%= cocktail.name %></p>
-              <a href="#" class="btn btn-success">Pick up!</a>
-            </div>
-             <br>
+      <div class="col-4">
+        <div class="card-product">
+          <img src="<%= cl_image_path cocktail.photo, crop: :fill %>">
+          <div class="card-product-infos">
+            <%= link_to cocktail_path(cocktail) do  %>
+            <h2><%= cocktail.name %></h2>
+            <% end %>
+            <p>Product description with <strong>relevant info</strong> only.</p>
           </div>
+        </div>
       </div>
      <% end %>
     <% end %>
   </div>
 </div>
-
-
 

@@ -1,6 +1,7 @@
 body {
   padding-top: 70px;
-  background-color: #072F50;
+  background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1495808921907-1599ab4d6801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80);
+  background-size: cover;
 }
 
 .btn-cocktail {
@@ -9,9 +10,42 @@ body {
   padding: 10px;
   border-radius: 4px;
   transition: background 0.3s ease;
-  opacity: O.9px;
 }
 
-// .container-creation {
-//   margin: 0 auto;
-// }
+.card-product {
+  overflow: hidden;
+  height: 130px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.card-product img {
+  height: 100%;
+  width: 126px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #553D7C;
+  text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
